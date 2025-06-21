@@ -1,10 +1,10 @@
 
 ![image](https://github.com/user-attachments/assets/9978a0fc-d3a9-4681-91fa-c762d5221165)
 
-`README.md` — Brand Page React Project
+`README.md` — React + Vite Project
 
 ```markdown
- 🛍️ Brand Page – React Project
+ 🛍️ Brand Page – (React + Vite Version)
 
 A modern, responsive **brand showcase website** built using **React.js**.  
 This project is designed to display brand details with a clean layout, intuitive navigation, and polished visuals — perfect for product landing pages or portfolio features.
@@ -60,50 +60,45 @@ npm start
 
 This project is deployed using the `gh-pages` package.
 
- 🔧 Step 1: Set `homepage` in `package.json`
 
-```json
-"homepage": "https://prabha34.github.io/React-Projects/project-1-brand-page"
-```
 
- 📜 Step 2: Add deploy scripts to `package.json`
+🔧 Step 1: Set base path in vite.config.js
+Inside vite.config.js, add the base option:
 
-```json
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  base: '/React-Projects/project-1-brand-page/',
+  plugins: [react()],
+})
+Note: Adjust the path to match your folder structure in the GitHub repo.
+
+📜 Step 2: Add deploy scripts to package.json
+
 "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+  "deploy": "gh-pages -d dist"
 }
-```
+📥 Step 3: Install gh-pages
 
- 📥 Step 3: Install gh-pages
-
-```bash
 npm install gh-pages --save-dev
-```
+🧱 Step 4: Build the project
 
- 🧱 Step 4: Build the project
-
-```bash
 npm run build
-```
+🌐 Step 5: Deploy to GitHub Pages
 
- 🌐 Step 5: Deploy to GitHub Pages
-
-```bash
 npm run deploy
-```
+✅ This will push your dist/ folder to the gh-pages branch.
 
-Once deployed, your site will be available at:
+Once deployed, your live site will be available at:
 
-```
+
 https://prabha34.github.io/React-Projects/project-1-brand-page/
-```
-
-✅ Ensure your repo has a `gh-pages` branch created after deployment.
-
----
  📌 Future Enhancements
 
 * Add animations using Framer Motion
