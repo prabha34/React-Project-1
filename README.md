@@ -1,12 +1,8 @@
 
 ![image](https://github.com/user-attachments/assets/9978a0fc-d3a9-4681-91fa-c762d5221165)
 
-Alright Serena 💡✨
-You're now shifting to **React + Vite** — nice move! It's faster, leaner, and just as deployable. Below is your fully upgraded `README.md` — based on your earlier style — but now tweaked **specifically for Vite** and **GitHub Pages deployment**.
 
----
-
- 📄 `README.md` — Brand Page (React + Vite Version)
+ 📄 `README.md` — **React + Vite**
 
 ````markdown
  🛍️ Brand Page – React + Vite Project
