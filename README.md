@@ -1,5 +1,9 @@
 
-![image](https://github.com/user-attachments/assets/9978a0fc-d3a9-4681-91fa-c762d5221165)
+Brand Page
+
+![image](https://github.com/user-attachments/assets/6bffd434-d09b-439a-b09c-db53e27e8968)
+
+
 
 
  📄 `README.md` — **React + Vite**
